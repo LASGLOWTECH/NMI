@@ -1,8 +1,16 @@
 
 import Gall from "./gall";
+import { useEffect } from "react";
+
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 
 
 const Gallery = () => {
+    useEffect(() => {
+        AOS.init({ duration: 500 });
+
+    }, []);
  return (
   <div className="About bg-yellow-100">
 
@@ -17,7 +25,7 @@ const Gallery = () => {
      <div className=" grid gap-5 grid-cols-1 py-10 service-points   md:grid-cols-3">
       {Gall.map(val => {
 
-       return (<div className="  md:break-inside-auto shadow-xl  hover:scale-105 hover:text-gray-300 " key={val.id} >
+       return (<div className="  md:break-inside-auto shadow-xl  hover:scale-105 hover:text-gray-300 " key={val.id}data-aos="slide-in" >
         <img className=" md:break-inside-auto  " src={val.Img} alt='girl'></img>
 
         

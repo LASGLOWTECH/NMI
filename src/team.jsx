@@ -1,9 +1,18 @@
 
 
 
+ 
+import { useEffect } from "react";
+
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 
 import Profiles from "./profile";
 const About = () => {
+  useEffect(() => {
+    AOS.init({ duration: 1000 });
+
+}, []);
  return (
   <div className="About bg-yellow-100">
 
@@ -41,7 +50,7 @@ const About = () => {
      <div className=" grid gap-5  over-flow-hidden grid-cols-1 py-8 service-points   md:grid-cols-3">
       {Profiles.map(val => {
 
-       return (<div className="  bg-gray-200 shadow-xl  hover:bg-white hover:text-gray-300 p-4" key={val.id} >
+       return (<div className="  bg-gray-200 shadow-xl  hover:bg-white hover:text-gray-300 p-4" key={val.id} data-aos="zoom-in-up" >
         <img className="w-full" src={val.Icon} alt='girl'></img>
 
         <h5 className=' text-base text-left pt-2 text-gray-700 font-bold  '>{val.headtext}</h5>

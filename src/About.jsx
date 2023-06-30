@@ -1,6 +1,18 @@
 
+import { useEffect } from "react";
+
+import AOS from 'aos';
+import 'aos/dist/aos.css';
+
+
+
 import Values from "./values";
 const About = () => {
+  useEffect(() => {
+    AOS.init({ duration: 1000 });
+
+}, []);
+
   return (
     <div className="About">
 
@@ -53,7 +65,7 @@ communities, prisons, schools, IDP camps and shelters.
           <div className=" grid gap-5  grid-cols-1 py-8 service-points   md:grid-cols-2">
             {Values.map(val => {
 
-              return (<div className=" bg-green-20 max-w-full h-auto shadow-lg hover:bg-white hover:text-gray-300 hover:scale-105 p-4" key={val.id} >
+              return (<div className=" bg-green-20 max-w-full h-auto shadow-lg hover:bg-white hover:text-gray-300 hover:scale-105 p-4" key={val.id} data-aos="zoom-in-up">
                 <img className="w-full" src={val.Icon} alt='girl'></img>
 
                 <h5 className=' text-2xl text-justify pt-3 text-gray-700 font-bold  '>{val.headtext}</h5>
