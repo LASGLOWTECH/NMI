@@ -1,38 +1,19 @@
 import Info from "./exports";
 import Doings from "./doings";
-import { GrFormPrevious, GrFormNext } from "react-icons/gr";
-import { RxDotFilled } from "react-icons/rx";
+// import { GrFormPrevious, GrFormNext } from "react-icons/gr";
+import { Carousel } from "@material-tailwind/react"
+import Testimonials from "./testimonials";
+// import { RxDotFilled } from "react-icons/rx";
 
-import { useState } from "react";
-
+import { Button } from "@material-tailwind/react";
 
 const Home = () => {
-  // const [CurrentIndex, setCurrentIndex]=useState(0)
-
-  // const Prevslide=()=>{
-  //   const firstSlide=CurrentIndex===0
-  //   const newIndex= firstSlide ? Image.lengt-1:CurrentIndex-1
-  //   setCurrentIndex(newIndex)
-  // }
-
-  // indicators
-  // const gotoslide=()=>{
-  //   setslideindex(slideindex)
-  // }
-
-  // const Nextslide=()=>{
-  //   const lastSlide=CurrentIndex===Image.lengt-1;
-
-  //   const newIndex= lastSlide ? 0:CurrentIndex+1
-  //   setCurrentIndex(newIndex)
-  // }
-
 
   return (
     <div className="Home ">
 
 
-      <section className='hero-section bg-yellow-500 space-y-6  pb-6justify-between hover:scale-40 '>
+      <section className='hero-section bg-yellow-500 space-y-12 pb-6justify-between hover:scale-40 '>
         <div className='flex flex-col container mx-auto  px-6 md:flex-row'>
           <div className=' flex flex-col  mt-10 '>
             <p className='text-lg font-bold text-yellow-500 pt-10 ' >Nicholasmotivates Initiative</p>
@@ -42,10 +23,10 @@ const Home = () => {
               Our core mandate is to eradicate period poverty, menstrual shame, stigma and taboos for the vulnerable, victimized,
               disadvantage and marginalized girl child, women, female inmates and women
               with disabilities to create a world where every girl, women, female inmates and female genders with disabilities are empowered to manage her Menstruation safely and hyginacally with integrity,
-             pride and confidence hence mitigating poor menstrual hygiene management.
+              pride and confidence hence mitigating poor menstrual hygiene management.
             </p>
             <div className='flex justify-start'>
-              <a href="/" className='rounded-md text-white  hover:bg-black hover:text-white  px-4 mt-5 py-2 bg-yellow-600 font-bold  '>Donate Now</a>
+              <a href="/contact" className='rounded-md text-white  hover:bg-black hover:text-white  px-4 my-6 py-2 bg-yellow-600 font-bold  '>Donate Now</a>
             </div>
 
           </div>
@@ -62,7 +43,7 @@ const Home = () => {
           <div className="line p  place-self-center w-20 md:place-self-start md:w-20 border border-yellow-500"></div>
 
           <h3 className=' max-w-md text-2xl pt-3 text-center  text-gray-600 font-bold md:text-left'>It is our Believe, that we can reach more
-           disadvantage, victimized and marginalized girl child spread across rural communities, schools, IDP camps and prisons with you</h3>
+            disadvantage, victimized and marginalized girl child spread across rural communities, schools, IDP camps and prisons with you</h3>
           <p className='text-base text-center   max-w-md font-medium text-gray-700 py-5 md:text-justify' >
             Every Singleschool girl child, women, female inmates and female genders with disabilities deserves the comfort of a sanitary pad regardless of
             their aristocratic backgrounds or circumstances not withstanding. No school girl child shuold miss out of school within the space of her
@@ -118,9 +99,9 @@ const Home = () => {
         <div className='container mx-auto px-2 py-3 flex flex-col items-center' >
           <div className="hover:border-blue-300  container mx-auto px-2 ">
             <h2 className=' text-center  text-2xl py-5   text-gray-600  font-bold'>We are passionate about the reproductive health care
-            and menstrual hygiene management of the girl child.
-         <span className="text-uppercase"> Pads Should be given for free, Menstruation is an inevitable factor that can't be altered
-         </span></h2>
+              and menstrual hygiene management of the girl child.
+              <span className="text-uppercase"> Pads Should be given for free, Menstruation is an inevitable factor that can't be altered
+              </span></h2>
           </div>
 
 
@@ -130,7 +111,7 @@ const Home = () => {
         <div className=" mx-auto px-6   container">
           <div className="bg-blue-50  rounded-xl">
 
-            <iframe title="Distributing pads  Section" className="w-full rounded-xl p-2 aspect-video" src="/Austin's.mp4"></iframe>
+            <iframe title="Distributing pads  Section" className="w-full rounded-xl p-2 aspect-video" src="/Unale2.mp4"></iframe>
 
           </div>
 
@@ -154,8 +135,6 @@ const Home = () => {
             })}
           </div>
 
-
-
         </div>
       </section>
 
@@ -171,61 +150,46 @@ const Home = () => {
 
           </div>
 
-<div className="flex justify-center items-center flex-row">
-<h5 className="bg-white ">  <GrFormPrevious /></h5>
 
-<div className="bg-blue-50  rounded-xl">
 
-  <iframe title="Distributing pads  Section" className="w-full rounded-xl p-2 aspect-video" src="/Austin's.mp4"></iframe>
 
-          </div>
-          
-
-          <h5 className="bg-white ">  <GrFormNext /></h5>
-          </div>
 
         </div>
 
+
+
+        <div className=" container  px-6 mx-auto">
+
+
+
+        <Carousel transition={{ duration: 0.5 }} className="rounded-xl">
+
+            {Testimonials.map(vida => {
+              return (
+
+
+                <div className="bg-blue-50  rounded-xl" key={vida.id}>
+                  <iframe title="Distributing pads  Section" className="w-full rounded-xl p-2 aspect-video" src={vida.Video}></iframe>
+                </div>
+               )
+            })}
+
+
+</Carousel>
+
+          
+
+
+        </div>
 
 
 
       </section>
-      {/* 
-
-      <div className="texrrx bg-black">
-          <div className='container flex flex-row justify-between  items-center mx-auto px-6 pt-5 ' >
-            
-            <div className=" flex justify-center py-4  md:justify-center md:flex-row">
-
-              <div className="imge flex items-center h-50 w-[50px] h-[50px] justify-center border md:h-[100px] md:w-[100px] bg-white border-white rounded-[100%] ">
-                <img src="/appoint.png" alt="girl" className="  "></img>
-              </div>
-
-              <div className="identity px-7  flex flex-col md:px-5 justify-center  ">
-                <h5 className=' text-center text-white font-bold md:text-2xl  md:text-left '>Dr. Alexander Majoku</h5>
-                <p className='  text-sm text-center  text-yellow-500 font-bold md:text-base md:text-left'>Md. Alimo Associate
-                </p>
-                <p className='  text-base pt-3 te xt-center max-w-md text-white font-normal md:text-base md:text-left'>We have affected lives through our Charity services, Testified many who considers our services worth it We have affected lives through our Charity services
-                </p>
-              </div>
-            </div>
-
-
-          
-           
-
-          </div>
-
-          <RxDotFilled className="text-white" />
-        </div>
- */}
 
 
 
 
-
-
-
+      <Button>Button</Button>;
 
 
 
@@ -248,13 +212,13 @@ const Home = () => {
 
 
           <div className="gallery-items h-6/12bg-green-500">
-            <img src="/nmi30.jpg" alt="gridtems" className=""></img>
+            <img src="/gal2.JPG" alt="gridtems" className=""></img>
           </div>
           <div className="gallery-items  w-100 bg-yellow-500 h-6/12">
-            <img src="/nmi7.jpg" alt="gridtems" className="" ></img>
+            <img src="/gal4.jpg" alt="gridtems" className="" ></img>
           </div>
           <div className="gallery-items h-6/12 bg-yellow-500">
-            <img src="nmi72.jpg" alt="gridtems" className=" w-50"></img>
+            <img src="/gal (22).JPG" alt="gridtems" className=" w-50"></img>
           </div>
 
 

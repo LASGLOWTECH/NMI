@@ -5,7 +5,7 @@
 
 const  Gall= [
  { id:1,
-  Img:"/gal (01).jpeg"
+  Img:"/gal (01).jpg"
  },
 
  { id:2,
@@ -13,7 +13,7 @@ const  Gall= [
  },
 
  { id:3,
-  Img:"/gal (2).jpeg"
+  Img:"/gal (2).jpg"
  },
 
  { id:4,
@@ -25,7 +25,7 @@ const  Gall= [
  },
 
  { id:6,
-  Img:"/gal (1).jpeg"
+  Img:"/gal (1).jpg"
  },
 
  { id:7,
@@ -37,7 +37,7 @@ const  Gall= [
  },
 
  { id:9,
-  Img:"/gal (7).jpeg"
+  Img:"/gal (7).jpg"
  },
 
  { id:10,
@@ -48,7 +48,7 @@ const  Gall= [
  },
 
  { id:12,
-  Img:"/gal (1O).JPG"
+  Img:"/nmi (25).jpg"
  },
 
  { id:13,
@@ -120,17 +120,33 @@ const  Gall= [
 
  
  { id:29,
-  Img:"/gal 4.jpg"
+  Img:"/gal2.JPG"
  },
 
  
- { id:28,
-  Img:"/gal7.jpg"
+ { id:30,
+  Img:"/gal (7).jpg"
  },
 
  
- { id:28,
-  Img:"/girlpad.png"
+ { id:31,
+  Img:"/nmi58.JPG"
+ },
+ { id:32,
+  Img:"/nmi72.JPG"
+ },
+
+ { id:33,
+  Img:"/nmi86.JPG"
+ },
+ { id:34,
+  Img:"/nmi35.JPG"
+ },
+ { id:35,
+  Img:"/nmi76.JPG"
+ },
+ { id:36,
+  Img:"/nmi22.JPG"
  },
 
 ]
