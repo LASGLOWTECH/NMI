@@ -7,12 +7,15 @@ import { BsTelephone, BsBank } from "react-icons/bs";
 import { GrLocation } from "react-icons/gr";
 import emailjs from '@emailjs/browser';
 // import Container from "react-bootstrap/Container";
-
+// service_49qguid', 'template_v2xyokn', form.current, '_CS5cVKXtNvM7lVFW
 
 const ContactUs = () => {
 
+const Serv= process.env.REACT_APP_MY_SERV_ID
+const Tempid= process.env.REACT_APP_MY_TEMP_ID
+const Pubkey= process.env.REACT_APP_MY_PUB_ID
 
-
+console.log(Serv)
  const form = useRef();
  const [loading, setIsloading] = useState(false)
  const [result, setResult] = useState("")
@@ -22,7 +25,7 @@ const ContactUs = () => {
 
   setIsloading(true);
 
-  emailjs.sendForm('service_49qguid', 'template_v2xyokn', form.current, '_CS5cVKXtNvM7lVFW')
+  emailjs.sendForm({Serv}, {Tempid}, form.current, {Pubkey})
 
    .then((result) => {
 

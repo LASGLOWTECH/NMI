@@ -9,21 +9,23 @@ import Contact from './contact';
 import Footer from './footer';
 import Gallery from './gallery';
 import Causes from './causes';
-function App() {
+import { useState } from 'react';
 
-  
+function App() {
+const [position, setPosition]=useState(0)
+
   return (
     <div className="App ">
-      <Navbar/>
+      <Navbar />
       <Routes>
-<Route path='/' element={ <Home/> } />
-<Route path='/about' element={ <About/> } />
-<Route path='/contact' element={ <Contact/> } />
-<Route path='/causes' element={ <Causes/> } />
-<Route path='/team' element={ <Team/> } />
-<Route path='/Gallery' element={ <Gallery/> } />
+        <Route path='/' element={<Home />} />
+        <Route path='/about' element={<About />} />
+        <Route path='/contact' element={<Contact />} />
+        <Route path='/causes' element={<Causes />} />
+        <Route path='/team' element={<Team />} />
+        <Route path='/Gallery' element={<Gallery />} />
       </Routes>
-    <Footer/>
+      <Footer />
     </div>
 
   );

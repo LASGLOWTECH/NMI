@@ -4,6 +4,7 @@ import { useEffect } from "react";
 
 import AOS from 'aos';
 import 'aos/dist/aos.css';
+import Videoclips from "./videoclips";
 
 
 const Gallery = () => {
@@ -36,6 +37,32 @@ const Gallery = () => {
       })}
      </div>
 
+
+
+
+
+
+     <div className="container   mx-auto px-6 ">
+<h3 className="mt-5  pt-5 text-2xl font-bold text-black text-center">Videos Gallery</h3>
+    <p className="py-6 text-gray-600 font-bold  text-base text-center">Short Clips on some of our Campaigns </p>
+
+
+     <div className=" grid gap-5 grid-cols-1 py-10 service-points   md:grid-cols-3">
+      {Videoclips.map(val => {
+
+       return (<div className="  md:break-inside-auto shadow-xl  hover:scale-105 hover:text-gray-300 " key={val.id}data-aos="slide-in" >
+         <iframe title="Distributing pads  Section" className="w-full rounded-xl p-2 aspect-video" src={val.Video} autoplay="false"></iframe>
+        
+       </div>
+       )
+
+
+      })}
+     </div>
+
+
+
+    </div>
 
 
     </div>

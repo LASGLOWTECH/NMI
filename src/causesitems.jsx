@@ -41,14 +41,6 @@ const CauseItems= [
 },
 
 
-{ id:7,
- Icon:"/nmi (82).jpg",
- headtext:"Our values and Principle",
- bodytext:"For the past years we have been working in field of: Working for the promotion of the values and integrity of the girl child, women, female inmates and female genders with disabilities regards their menstrual hygiene management through sensitization programs, community outreaches, prison outreach sensitization.programs, disability centers and IDP camps outreach programs where pad banks are being planted which creates accessibility of sanitary pads and menstrual products for our target audience. Gender equality and sexual harassment ,ustainable Development, Rural Development, Promotion and protection of the menstrual Human Rights of the girl child, women, female inmates and female genders with disabilities.n Education, Health, Child and Women development, Research program in menstrual hygiene management. Male gender sensitization and education on menstruation with the significance of eradicating menstrual shame, menstrual stigma and menstrual taboo"
-
-},
-
-
 
 { id:7,
  Icon:"/gal (16).JPG",
