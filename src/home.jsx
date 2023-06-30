@@ -5,7 +5,7 @@ import { Carousel } from "@material-tailwind/react"
 import Testimonials from "./testimonials";
 // import { RxDotFilled } from "react-icons/rx";
 
-import { Button } from "@material-tailwind/react";
+
 
 const Home = () => {
 
@@ -16,9 +16,9 @@ const Home = () => {
       <section className='hero-section bg-yellow-500 space-y-12 pb-6justify-between hover:scale-40 '>
         <div className='flex flex-col container mx-auto  px-6 md:flex-row'>
           <div className=' flex flex-col  mt-10 '>
-            <p className='text-lg font-bold text-yellow-500 pt-10 ' >Nicholasmotivates Initiative</p>
+            <p className='text-lg font-bold text-yellow-400 pt-10 ' >Nicholasmotivates Initiative</p>
 
-            <h1 className='text-4xl font-bold text-white max-w-md pt-2'>An Advocacy For the Girl Child Campaign Project;<span className="text-yellow-500"> GIVE OUT A PAD, SAVE A GIRL CHILD</span></h1>
+            <h1 className='text-4xl font-bold text-white  pt-2'>An Advocacy For the Girl Child Campaign Project;<span className="text-yellow-400"> GIVE OUT A PAD, SAVE A GIRL CHILD</span></h1>
             <p className='text-base text-justify   font-medium text-gray-300 py-5 ' >
               Our core mandate is to eradicate period poverty, menstrual shame, stigma and taboos for the vulnerable, victimized,
               disadvantage and marginalized girl child, women, female inmates and women
@@ -26,7 +26,7 @@ const Home = () => {
               pride and confidence hence mitigating poor menstrual hygiene management.
             </p>
             <div className='flex justify-start'>
-              <a href="/contact" className='rounded-md text-white  hover:bg-black hover:text-white  px-4 my-6 py-2 bg-yellow-600 font-bold  '>Donate Now</a>
+              <a href="/contact" className='rounded-md text-black  hover:bg-black hover:text-white  px-4 my-6 py-2 bg-yellow-400 font-bold  '>Donate Now</a>
             </div>
 
           </div>
@@ -111,7 +111,7 @@ const Home = () => {
         <div className=" mx-auto px-6   container">
           <div className="bg-blue-50  rounded-xl">
 
-            <iframe title="Distributing pads  Section" className="w-full rounded-xl p-2 aspect-video" src="/Unale2.mp4"></iframe>
+            <iframe title="Distributing pads  Section" className="w-full rounded-xl p-2 aspect-video" src="/Unale2.mp4" autoplay="0"></iframe>
 
           </div>
 
@@ -169,7 +169,7 @@ const Home = () => {
 
 
                 <div className="bg-blue-50  rounded-xl" key={vida.id}>
-                  <iframe title="Distributing pads  Section" className="w-full rounded-xl p-2 aspect-video" src={vida.Video}></iframe>
+                  <iframe title="Distributing pads  Section" className="w-full rounded-xl p-2  aspect-video " src={vida.Video} autoplay="0"></iframe>
                 </div>
                )
             })}
@@ -189,7 +189,7 @@ const Home = () => {
 
 
 
-      <Button>Button</Button>;
+     
 
 
 
@@ -226,7 +226,7 @@ const Home = () => {
 
         <div className="container mx-auto px-6">
           <div className='flex justify-center py-3'>
-            <a href="/gallery" className='rounded-md text-white  hover:bg-black hover:text-white px-4  py-2 bg-yellow-500 font-bold  '>View More</a>
+            <a href="/gallery" className='rounded-md text-black  hover:bg-black hover:text-white px-4  py-2 bg-yellow-400 font-bold  '>View More</a>
           </div>
         </div>
 
@@ -240,7 +240,7 @@ const Home = () => {
             <h4 className=' text-2xl text-center font-medium pt-5'>Our Partners</h4>
             <div className="line p  place-self-center w-20 md:w-20 border border-yellow-500"></div>
 
-            <h3 className=' max-w-md text-2xl py-3 text-center text-gray-600 font-bold '>We have Support from Organization, Who subsribed to our Vission </h3>
+            <h3 className=' max-w-md text-2xl py-3 text-center text-gray-600 font-bold '>Our Active Partners who believe in the Girl Child Safety Health </h3>
 
           </div>
 

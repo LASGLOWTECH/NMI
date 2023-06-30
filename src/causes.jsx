@@ -2,22 +2,22 @@
 import CauseItems from "./causesitems"
 const Causes = () => {
   return (
-    <div className="About">
+    <div className="About ">
 
       
 
-<section className='hero-section bg-yellow-500 py-8 hover:scale-40 '>
-        <div className='flex flex-col container mx-auto  px-6 md:flex-row'>
-          <div className=' flex flex-col  items-center justify-center  mt-10 '>
+<section className='hero-section bg-yellow-500 py-8  hover:scale-40 '>
+        <div className='flex flex-col container mx-auto   md:flex-row'>
+          <div className=' flex flex-col mx-auto  items-center justify-center  mt-10 '>
             <p className='text-lg font-bold  place-self-center text-yellow-500 pt-10 ' >Our Causes for actions</p>
 
             <h1 className='text-4xl text-center max-w-lg font-bold text-white pt-2'>Change is Possible and it comes from the Power Within</h1>
-            <p className='text-base text-justify   font-medium text-gray-300 py-5 ' >
+            <p className='  font-medium text-center text-gray-300 py-5 px-3' >
             You can't help the whole world, but
             yon can help a girl child, start listening and taking actions for period poverty elimination</p>
 
             <div className='flex justify-start my-3'>
-              <a href="/" className='rounded-md text-black shadow-sm hover:bg-green-400  hover:text-white  px-4 mt-5 py-2 bg-yellow-600 font-bold  '>Donate Now</a>
+              <a href="/" className='rounded-md text-black shadow-sm hover:bg-green-400  hover:text-white  px-4 mt-5 py-2 bg-yellow-500 font-bold  '>Donate Now</a>
             </div>
 
           </div>

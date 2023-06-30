@@ -59,7 +59,7 @@ const Navbar = () => {
             <a href='/contact' className='font-medium   hover:text-black  text-base md:hover:text-yellow-600'>Contact</a>
           </div>
           
-          < div className='rounded-md hidden hover:bg-black hover:text-white bg-yellow-500 font-bold   py-2 px-4 md:flex'>Donate</div>
+          < div className='rounded-md hidden hover:bg-black hover:text-white bg-yellow-400 font-bold   py-2 px-4 md:flex'>Donate</div>
 {!show && < div className=' flex items-center rounded-full hover:bg-black hover:text-white w-8 h-8  bg-yellow-500 text-black justify-center md:hidden'>< RxHamburgerMenu className="font-bold text-lg  " onClick={handleShow}/></div>}
          
 {show && <div className=' hover:text-yellow-500 text-black   py-2 px-4 md:hidden'>< FaTimes  className="font-medium text-xl"  onClick={handleClose}/></div>}

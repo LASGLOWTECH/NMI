@@ -48,8 +48,7 @@ communities, prisons, schools, IDP camps and shelters.
       <section className="Principles">
         <div className="container    mx-auto px-6 ">
           <h3 className=' max-w-md text-2xl pt-3 text-center text-lowercase  text-gray-600 font-bold md:text-left'>What we Stand for</h3>
-          <div className="line   place-self-center w-20 md:place-self-start md:w-20 border border-yellow-500"></div>
-
+          
 
           <div className=" grid gap-5  grid-cols-1 py-8 service-points   md:grid-cols-2">
             {Values.map(val => {
