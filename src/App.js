@@ -9,10 +9,11 @@ import Contact from './contact';
 import Footer from './footer';
 import Gallery from './gallery';
 import Causes from './causes';
-import { useState } from 'react';
+// import { useState } from 'react';
 
 function App() {
-const [position, setPosition]=useState(0)
+// const [position, setPosition]=useState(0)
+// const [gotop, setGotop]=useState(gotophidden)
 
   return (
     <div className="App ">
