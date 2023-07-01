@@ -46,8 +46,8 @@ communities, prisons, schools, IDP camps and shelters.
           <div className="line  place-self-center w-20 md:place-self-start md:w-20 border border-yellow-500"></div>
           <h3 className=' max-w-md text-2xl pt-3 text-center text-lowercase  text-gray-600 font-bold md:text-left'>GIVE OUT A PAD, SAVE A GIRL CHILD</h3>
           <p className='text-base text-center    font-medium text-gray-700 py-5 md:text-justify' >
-            Every Singleschool girl child deserves the comfort of a sanitary pad regardless of
-            their aristocratic backgrounds not withstanding. No school girl child shuold miss out of school within the space of her
+            Every Single school girl child deserves the comfort of a sanitary pad regardless of
+            their aristocratic backgrounds not withstanding. No school girl child should miss out of school within the space of her
             menstrual period because she can't afford a sanitary pad</p>
         </div>
 
