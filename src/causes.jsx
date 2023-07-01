@@ -28,7 +28,7 @@ const Causes = () => {
             <h1 className='text-4xl text-center max-w-lg font-bold text-white pt-2'>CHANGE IS POSSIBLE AND IT COMES FROM THE POWER WITHIN</h1>
             <p className='  font-medium text-center text-gray-300 py-5 px-3' >
             You can't help the whole world but
-            yon can help a girl child. Start listening and taking actions for period poverty elimination</p>
+            you can help a girl child. Start listening and taking actions for period poverty elimination</p>
 
             <div className='flex justify-start my-3'>
               <a href="/contact" className='rounded-md text-black shadow-sm hover:bg-green-400  hover:text-white  px-4 mt-5 py-2 bg-yellow-500 font-bold  '>Donate Now</a>
