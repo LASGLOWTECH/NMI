@@ -53,7 +53,7 @@ const Profiles= [
 
 { id:8,
  Icon:"/prof6.png",
- headtext:"Mr.Abdulquadir Hussaini Mohammed",
+ headtext:"Mr. Abdulquadir Hussaini Mohammed",
  bodytext:" Trustee"
 
 },
