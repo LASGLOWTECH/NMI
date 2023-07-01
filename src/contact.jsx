@@ -25,7 +25,7 @@ console.log(env);
 
   setIsloading(true);
 
-  emailjs.sendForm(env.REACT_APP_MY_SERV_ID ,env.REACT_APP_MY_TEMP_ID, form.current, env.REACT_APP_MY_TEMP_ID)
+  emailjs.sendForm('service_49qguid' , 'template_v2xyokn', form.current, '_CS5cVKXtNvM7lVFW')
 
    .then((result) => {
 
