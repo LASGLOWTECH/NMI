@@ -111,21 +111,21 @@ const Home = () => {
         <div className=" mx-auto px-6   container">
           <div className="bg-blue-50  rounded-xl">
 
-            <iframe title="Distributing pads  Section" className="w-full rounded-xl p-2 aspect-video" src="/Unale2.mp4" autoplay="0"></iframe>
+            <iframe title="Distributing pads  Section" className="w-full rounded-xl p-2 aspect-video" src="/Unale2.mp4" autostart="false"></iframe>
 
           </div>
 
         </div>
 
 
-        <div className="container    mx-auto px-6 ">
-          <div className=" grid  px-7   gap-5 md:space-x-12 grid-cols-2 py-3 service-points my-3   md:grid-cols-4">
+        <div className="container    mx-auto px-10 ">
+          <div className=" grid gap-3 px-7   md:gap-3 md:space-x-12 grid-cols-2 py-3 service-points my-3   md:grid-cols-4">
             {Doings.map(doing => {
 
               return (<div className="flex rounded-md flex-row mt-3  " key={doing.id} >
 
                 <div className="flex flex-col bg-yellow-400  hover:bg-blue-50  hover:scale-110 rounded-lg  p-4">
-                  <h1 className=' text-5xl text-center text-black font-bold  '>{doing.topN}+</h1>
+                  <h1 className=' text-4xl md:text-5xl text-center text-black font-bold  '>{doing.topN}+</h1>
                   <p className=' text-base text-center hover:text-black font-medium text-gray-600 py-2 ' >
                     {doing.btext}</p>
                 </div>
@@ -162,14 +162,14 @@ const Home = () => {
 
 
 
-        <Carousel transition={{ duration: 0.5 }} className="rounded-xl">
+        <Carousel transition={{ duration: 2 }} className="rounded-xl">
 
             {Testimonials.map(vida => {
               return (
 
 
                 <div className="bg-blue-50  rounded-xl" key={vida.id}>
-                  <iframe title="Distributing pads  Section" className="w-full rounded-xl p-2  aspect-video " src={vida.Video} autoplay="0"></iframe>
+                  <iframe title="Distributing pads  Section" className="w-full rounded-xl p-2  aspect-video " src={vida.Video} sandbox></iframe>
                 </div>
                )
             })}

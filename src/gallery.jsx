@@ -51,7 +51,7 @@ const Gallery = () => {
       {Videoclips.map(val => {
 
        return (<div className="  md:break-inside-auto shadow-xl  hover:scale-105 hover:text-gray-300 " key={val.id}data-aos="slide-in" >
-         <iframe title="Distributing pads  Section" className="w-full rounded-xl p-2 aspect-video" src={val.Video} autoplay="false"></iframe>
+         <iframe title="Distributing pads  Section" className="w-full rounded-xl p-2 aspect-video" src={val.Video} autostart="false"></iframe>
         
        </div>
        )

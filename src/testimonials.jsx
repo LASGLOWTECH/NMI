@@ -1,19 +1,19 @@
 const Testimonials= [
  { id:1,
-  Video:"/Testimony 1.mp4"
+  Video:"/Testimony1.mp4"
  },
 
  { id:2,
-  Video:"/Testimony 2.mp4"
+  Video:"/Testimony2.mp4"
  },
 
 
  { id:3,
-  Video:"/tempFile1-1.mp4"
+  Video:"/tempFile1.mp4"
  },
 
  { id:4,
-  Video:"/tempFile2.mp4"
+  Video:"/tempfile2.mp4"
  }
 
  

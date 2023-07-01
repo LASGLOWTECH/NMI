@@ -6,26 +6,26 @@ import { BiEnvelope } from "react-icons/bi";
 import { BsTelephone, BsBank } from "react-icons/bs";
 import { GrLocation } from "react-icons/gr";
 import emailjs from '@emailjs/browser';
+import env from "react-dotenv";
 // import Container from "react-bootstrap/Container";
 // service_49qguid', 'template_v2xyokn', form.current, '_CS5cVKXtNvM7lVFW
 
 const ContactUs = () => {
 
-const Serv= process.env.REACT_APP_MY_SERV_ID
-const Tempid= process.env.REACT_APP_MY_TEMP_ID
-const Pubkey= process.env.REACT_APP_MY_PUB_ID
+// const Serv= 
+// const Tempid= 
+// const Pubkey= env.REACT_APP_MY_PUB_ID
 
-console.log(Serv)
  const form = useRef();
  const [loading, setIsloading] = useState(false)
  const [result, setResult] = useState("")
  const sendEmail = (e) => {
-
+console.log(env);
   e.preventDefault();
 
   setIsloading(true);
 
-  emailjs.sendForm({Serv}, {Tempid}, form.current, {Pubkey})
+  emailjs.sendForm(env.REACT_APP_MY_SERV_ID ,env.REACT_APP_MY_TEMP_ID, form.current, env.REACT_APP_MY_TEMP_ID)
 
    .then((result) => {
 
@@ -56,7 +56,7 @@ console.log(Serv)
     <h3 className="mt-5  pt-5 text-2xl font-bold text-yellow-400 text-center">Contact Us For more details</h3>
     <p className="py-6 text-white   text-base text-center">Donate by contacting us through the form provided, we would appreciate your concern  </p>
 
-    <div className="grid grid-cols=1 md:grid-cols-2">
+    <div className="grid grid-cols-1 md:grid-cols-2">
 
      <div className="contact-sec  space-y-12 flex flex-col mt-5 pt-4 mx-4">
      
@@ -127,7 +127,7 @@ console.log(Serv)
 
      <div className="form">
 
-      <form className="   px-10 my-5 mx-3 bg-white shadow-lg " ref={form} onSubmit={sendEmail}>
+      <form className="  my-5 mx-3 flex flex-col px-3 bg-white shadow-lg " ref={form} onSubmit={sendEmail}>
        < h3 className=" font-bold  text-lg ps-5 py-3 text-black ">Send Message</h3>
 
        <p className=" text-base text-green-500 ps-5 py-2 text-gray-500">{result} </p>
@@ -135,21 +135,21 @@ console.log(Serv)
 
        <div className="email-send flex flex-col ">
         <label className="pt-3 pb-2 ps-5" for="text">Name</label>
-        <input type="text" className="ps-5  border border-b-yellow-500 shadow-md border-double py-2 mt-2 w-[300px] text-base  rounded-lg " name="user_name" placeholder="Name"></input>
+        <input type="text" className="ps-5  border border-b-yellow-500 shadow-md border-double py-2 mt-2 w-full text-base  rounded-lg " name="user_name" placeholder="Name"></input>
 
        </div>
 
 
        <div className="email-send flex  flex-col ">
         <label className="pt-3 pb-2 ps-5" for="text">Email</label>
-        <input type="Email" className="py-2  border border-b-yellow-400 shadow-md border-double  ps-5 mt-2 w-[300px] text-base  rounded-lg " name="user_email" required placeholder="Email"></input>
+        <input type="Email" className="py-2  border border-b-yellow-400 shadow-md border-double  ps-5 mt-2 w-full text-base  rounded-lg " name="user_email" required placeholder="Email"></input>
 
        </div>
 
 
        <div className="email-send flex flex-col ">
         <label className="pt-3 pb-2 ps-5" for="text">Message</label>
-        <textarea className="w-[300px] h-[200px]   text-gray-400 ps-5 py-5  border border-b-yellow-500 shadow-md border-double text-base" name="message" placeholder="Message" cols="6"
+        <textarea className="w-full h-[200px]   text-gray-400 ps-5 py-5  border border-b-yellow-500 shadow-md border-double text-base" name="message" placeholder="Message" cols="6"
          rows="3"></textarea>
        </div>
 
