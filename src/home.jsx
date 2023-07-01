@@ -98,7 +98,7 @@ const Home = () => {
       <section className="Vivav   py-4">
         <div className='container mx-auto px-2 py-3 flex flex-col items-center' >
           <div className="hover:border-blue-300  container mx-auto px-2 ">
-            <h2 className=' text-justify  text-2xl py-5   text-gray-600  font-bold'>We are passionate about the reproductive health care
+            <h2 className=' text-center  text-2xl py-5   text-gray-600  font-bold'>We are passionate about the reproductive health care
               and menstrual hygiene management of the girl child.
               <span className="text-uppercase"> Pads should be given for free, menstruation is an inevitable factor that can't be altered
               </span></h2>

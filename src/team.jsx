@@ -22,7 +22,7 @@ const About = () => {
      <h4 className=' text-2xl text-center f-bold text-gray-600 font-medium md:text-left'>Board of Trustees</h4>
      <div className="line   place-self-center w-20 md:place-self-start md:w-20 border border-yellow-500"></div>
     
-     <p className='text-base text-center    font-medium text-gray-700 py-5 md:text-justify' >
+     <p className='text-base text-center   font-medium text-gray-700 py-5 md:text-justify' >
      
       Nicholasmotivates Initiative is headed by highly esteemed
       board of trustees, with professional humanitarian experience in dealing
@@ -32,7 +32,7 @@ const About = () => {
     </div>
 
     <div className=" bg-gray-200  mt-3 rounded-lg  ">
-     <img className="mx-auto hover:scale-105 w-full    md:m-auto" src='/gal (5).jpg' alt='team'></img>
+     <img className="mx-auto hover:scale-105 w-full    md:m-auto" src='/gal (5).JPG' alt='team'></img>
 
     </div>
    </div>
@@ -50,7 +50,7 @@ const About = () => {
      <div className=" grid gap-5  over-flow-hidden grid-cols-1 py-8 service-points   md:grid-cols-3">
       {Profiles.map(val => {
 
-       return (<div className="  bg-gray-200 shadow-xl  hover:bg-white hover:text-gray-300 p-4" key={val.id} data-aos="zoom-in-up" >
+       return (<div className="  bg-gray-200 shadow-xl  hover:bg-white hover:text-gray-300 p-4" key={val.id} data-aos="zoom-in" >
         <img className="w-full" src={val.Icon} alt='girl'></img>
 
         <h5 className=' text-base text-left pt-2 text-gray-700 font-bold  '>{val.headtext}</h5>
