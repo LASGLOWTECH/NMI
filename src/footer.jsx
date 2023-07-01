@@ -18,11 +18,11 @@ const Footer = () => {
 
       <div className="footer-items flex flex-col ">
 
-        <h5 className=' max-w-md text-xl pb-2 text-center text-yellow-500 font-bold md:text-2xl'>Contact Us </h5>
+        <h5 className=' max-w-md text-xl pb-2 text-center text-yellow-500 font-bold md:text-2xl'>Contact us </h5>
         <p className="text-base   text-gray-300 py-3"> Plot 122, Off SureStart School, by F01,
           Kubwa, Extension III, F.C.T, Abuja.</p>
 
-        <p className="text-base  text-gray-300"> +234-9116-135-342</p>
+        <p className="text-base  text-gray-300"> +234-8100-100-489</p>
         <p className="text-base pt-2 text-gray-300"> nicholasmotivatesinitiative@gmail.com </p>
 
         <div className='Email    flex  justify-start'>
@@ -65,7 +65,7 @@ const Footer = () => {
       <div className="footer-items 
         flex flex-col ">
 
-        <p className='   text-base   text-left  text-white font-bold  '>Send us message and it will be
+        <p className='   text-base   text-left  text-white font-bold  '>Send us message and you will be
           attended to</p>
         <p className="text-base text-justify  text-gray-200 py-3">We would like to hear from you, contact
           us through email
@@ -84,7 +84,7 @@ const Footer = () => {
     </div>
 
 
-    <p className="text-sm text-center font-light pt-10 text-gray-300 py-3">All Rights Reserved Nicholasmotivates Initiative  20223. Powered by Lasglowtech </p>
+    <p className="text-sm text-center font-light pt-10 text-gray-300 py-3">All Rights Reserved Nicholasmotivates Initiative  2023. Powered by Lasglowtech </p>
   </div>
 
 

@@ -21,7 +21,7 @@ const Home = () => {
             <h1 className='text-4xl font-bold text-white  pt-2'>An Advocacy For the Girl Child Campaign Project;<span className="text-yellow-400"> GIVE OUT A PAD, SAVE A GIRL CHILD</span></h1>
             <p className='text-base text-justify   font-medium text-gray-300 py-5 ' >
               Our core mandate is to eradicate period poverty, menstrual shame, stigma and taboos for the vulnerable, victimized,
-              disadvantage and marginalized girl child, women, female inmates and women
+              disadvantage and marginalized girl child, women, female inmates and female genders
               with disabilities to create a world where every girl, women, female inmates and female genders with disabilities are empowered to manage her Menstruation safely and hyginacally with integrity,
               pride and confidence hence mitigating poor menstrual hygiene management.
             </p>
@@ -39,13 +39,13 @@ const Home = () => {
       <div className='container mx-auto px-6   pt-3 my-10 flex flex-col justify-between md:flex-row md:space-x-6' >
 
         <div className=" flex flex-col space-y-2  justify-start">
-          <h4 className=' text-2xl text-center f-bold text-gray-600 font-medium md:text-left'>Our Belive</h4>
+          <h4 className=' text-2xl text-center f-bold text-gray-600 font-medium md:text-left'>Our Believe</h4>
           <div className="line p  place-self-center w-20 md:place-self-start md:w-20 border border-yellow-500"></div>
 
-          <h3 className=' max-w-md text-2xl pt-3 text-center  text-gray-600 font-bold md:text-left'>It is our Believe, that we can reach more
+          <h3 className=' max-w-md text-2xl pt-3 text-center  text-gray-600 font-bold md:text-left'>It is our believe, that we can reach more
             disadvantage, victimized and marginalized girl child spread across rural communities, schools, IDP camps and prisons with you</h3>
           <p className='text-base text-center   max-w-md font-medium text-gray-700 py-5 md:text-justify' >
-            Every Singleschool girl child, women, female inmates and female genders with disabilities deserves the comfort of a sanitary pad regardless of
+            Every Single school girl child, women, female inmates and female genders with disabilities deserves the comfort of a sanitary pad regardless of
             their aristocratic backgrounds or circumstances not withstanding. No school girl child shuold miss out of school within the space of her
             menstrual period because she can't afford a sanitary pad</p>
         </div>
@@ -98,9 +98,9 @@ const Home = () => {
       <section className="Vivav   py-4">
         <div className='container mx-auto px-2 py-3 flex flex-col items-center' >
           <div className="hover:border-blue-300  container mx-auto px-2 ">
-            <h2 className=' text-center  text-2xl py-5   text-gray-600  font-bold'>We are passionate about the reproductive health care
+            <h2 className=' text-justify  text-2xl py-5   text-gray-600  font-bold'>We are passionate about the reproductive health care
               and menstrual hygiene management of the girl child.
-              <span className="text-uppercase"> Pads Should be given for free, Menstruation is an inevitable factor that can't be altered
+              <span className="text-uppercase"> Pads should be given for free, Menstruation is an inevitable factor that can't be altered
               </span></h2>
           </div>
 
@@ -202,7 +202,7 @@ const Home = () => {
             <h4 className=' text-2xl text-center font-medium pt-5'>Our Tours</h4>
             <div className="line p  place-self-center w-20  md:w-20 border border-yellow-500"></div>
 
-            <h3 className=' max-w-md text-2xl py-3 text-center  text-gray-600 font-bold '>Higlights from our tours and Moments in rendering Heartful </h3>
+            <h3 className=' max-w-md text-2xl py-3 text-center  text-gray-600 font-bold '>Higlights from our tours and moments in rendering humaniteria aid and creating social harmony and impact </h3>
 
           </div>
         </div>
@@ -240,7 +240,7 @@ const Home = () => {
             <h4 className=' text-2xl text-center font-medium pt-5'>Our Partners</h4>
             <div className="line p  place-self-center w-20 md:w-20 border border-yellow-500"></div>
 
-            <h3 className=' max-w-md text-2xl py-3 text-center text-gray-600 font-bold '>Our Active Partners who believe in the Girl Child Safety Health </h3>
+            <h3 className=' max-w-md text-2xl py-3 text-center text-gray-600 font-bold '>Our Active Partners who believe in the GIVE OUT A PAD, SAVE A GIRL campaign project </h3>
 
           </div>
 

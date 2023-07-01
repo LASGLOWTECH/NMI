@@ -149,6 +149,36 @@ const  Gall= [
   Img:"/nmi22.JPG"
  },
 
+
+ { id:37,
+  Img:"/nmi (80).JPG"
+ },
+ { id:38,
+  Img:"/nmi (37).JPG"
+ },
+
+ { id:39,
+  Img:"/nmi (44).JPG"
+ },
+
+ { id:40,
+  Img:"/nmi (59).JPG"
+ },
+ { id:41,
+  Img:"/nmi (84).JPG"
+ },
+
+ { id:42,
+  Img:"/nmi72.JPG"
+ },
+
+ { id:43,
+  Img:"/nmi78.JPG"
+ },
+
+ { id:44,
+  Img:"/nmi76.JPG"
+ },
 ]
 
 

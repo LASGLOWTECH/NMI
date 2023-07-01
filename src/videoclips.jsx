@@ -9,12 +9,12 @@ const Videoclips= [
  },
 
  { id:2,
-  Video:"/Unale2.mp4"
+  Video:"/tempFile.mp4.mp4"
  },
 
 
  { id:3,
-  Video:"/tempFile1.mp4"
+  Video:"/tempFile2.mp4"
  },
 
  { id:4,
@@ -24,7 +24,6 @@ const Videoclips= [
  { id:5,
   Video:"/tempfile3.mp4"
  },
- 
  
 
 
