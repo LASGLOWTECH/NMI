@@ -49,12 +49,11 @@ console.log(env);
  };
 
 
-
  return (
   <div className="Contact-Hero bg-black">
    <div className="container py-5 px-6  mx-auto ">
-    <h3 className="mt-5  pt-5 text-2xl font-bold text-yellow-400 text-center">Contact Us For more details</h3>
-    <p className="py-6 text-white   text-base text-center">Donate by contacting us through the form provided, we would appreciate your concern  </p>
+    <h3 className="mt-5  pt-5 text-2xl font-bold text-yellow-400 text-center">Contact us for more details</h3>
+    <p className="py-6 text-white   text-base text-center">Donate by contacting us through the form provided, we would appreciate your benevolence. </p>
 
     <div className="grid grid-cols-1 md:grid-cols-2">
 

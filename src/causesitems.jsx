@@ -1,7 +1,7 @@
 const CauseItems= [
  { id:1,
   Icon:"/gal (11).JPG",
-  headtext:"values and Principles",
+  headtext:"Values and Principles",
   bodytext:"Nicholasmotivates Initiative encourages the following values to be practiced both at individual and organizational level; Honesty,Transparency and Accountability, Mutual respect, Creativity, Gender sensitiveness, Cost efficiency and Participation Solidarity"
 },
 { id:2,
@@ -20,8 +20,8 @@ const CauseItems= [
 
 { id:4,
  Icon:"/nmi2.png",
- headtext:"Our values and Principle",
- bodytext:"For the past years we have been working in field of: Working for the promotion of the values and integrity of the girl child, women, female inmates and female genders with disabilities regards their menstrual hygiene management through sensitization programs, community outreaches, prison outreach sensitization programs, disability centers and IDP camps outreach programs where pad banks are being planted which creates accessibility of sanitary pads and menstrual products for our target audience. We have advocated gender equality and sexual harassment, sustainable development, rural development, promotion and protection of the menstrual, human rights of the girl child, women, female inmates and female genders with disabilities. We have made significant contributions in education, reproductive health, girl child and women development as well as research program in menstrual hygiene management. We have engaged the male gender with a vigorous campaign with the theme; “THE ROLES OF BOYS AND MEN IN MENSTRUAL HYGIENE MANAGEMENT; BRING THE MALE GENDER INTO MENSTRUATION. Through the campaign we have being able to foster an awareness drive targeted at mitigating menstrual shame, taboos and stigmas."
+ headtext:"Our values and principle",
+ bodytext:" For the past years we have been working in field of: Working for the promotion of the values and integrity of the girl child, women, female inmates and female genders with disabilities regards their menstrual hygiene management through sensitization programs, community outreaches, prison outreach sensitization programs, disability centers and IDP camps outreach programs where pad banks are being planted which creates accessibility of sanitary pads and menstrual products for our target audience. We have advocated gender equality and sexual harassment, sustainable development, rural development, promotion and protection of the menstrual, human rights of the girl child, women, female inmates and female genders with disabilities. We have made significant contributions in education, reproductive health, girl child and women development as well as research program in menstrual hygiene management. We have engaged the male gender with a vigorous campaign with the theme; “THE ROLES OF BOYS AND MEN IN MENSTRUAL HYGIENE MANAGEMENT; BRING THE MALE GENDER INTO MENSTRUATION. Through the campaign we have being able to foster an awareness drive targeted at mitigating menstrual shame, taboos and stigmas."
 
 },
 
@@ -35,8 +35,8 @@ const CauseItems= [
 
 { id:6,
  Icon:"/nmi30.jpg",
- headtext:"Our focus areas for Rural Development",
- bodytext:"Our Rural development activities,  key areas are Education, Health  and Family welfare, Sustainable  menstrual hygiene products and  Social causes."
+ headtext:"Our focus areas for rural development",
+ bodytext:"Our rural development key areas are Education, Health  and Family welfare, Sustainable  menstrual hygiene products and  Social causes."
 
 },
 

@@ -32,7 +32,7 @@ const About = () => {
     </div>
 
     <div className=" bg-gray-200  mt-3 rounded-lg  ">
-     <img className="mx-auto hover:scale-105 w-full    md:m-auto" src='/Team.jpg' alt='team'></img>
+     <img className="mx-auto hover:scale-105 w-full    md:m-auto" src='/gal (5).jpg' alt='team'></img>
 
     </div>
    </div>

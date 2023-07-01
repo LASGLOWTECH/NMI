@@ -8,24 +8,13 @@ const Videoclips= [
   Video:"/nmv (1).mp4"
  },
 
+ 
  { id:2,
-  Video:"/tempFile.mp4.mp4"
- },
-
-
- { id:3,
-  Video:"/tempFile2.mp4"
- },
-
- { id:4,
-  Video:"/tempFile4.mp4"
- },
- 
- { id:5,
-  Video:"/tempfile3.mp4"
+  Video:"/idp.mp4"
  },
  
 
+ 
 
  
 

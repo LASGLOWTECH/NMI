@@ -49,7 +49,7 @@ const Footer = () => {
 
       </div>
 
-      {/* third greed */}
+   
 
       <div className="footer-items flex 
   md: items-center  flex-col ">
@@ -65,9 +65,9 @@ const Footer = () => {
       <div className="footer-items 
         flex flex-col ">
 
-        <p className='   text-base   text-left  text-white font-bold  '>Send us message and you will be
+        <p className='   text-base   text-left  text-white font-bold  '>Send us a message and you will be
           attended to</p>
-        <p className="text-base text-justify  text-gray-200 py-3">We would like to hear from you, contact
+        <p className="text-base text-justify  text-gray-200 py-3">We would love to hear from you. Contact
           us through email
         </p>
         <div className="email-send flex ">

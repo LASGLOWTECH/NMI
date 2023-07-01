@@ -52,11 +52,11 @@ const Navbar = () => {
           <div className='nav-brand py-2   w-16  h-25  '><img src='/NMB.png' alt='brand-logo' /></div>
           <div className= { `hidden text-white transform space-y-6 navlinks flex nav-links ${toggleI} md:space-x-6 md:text-black  md:block` } >
           <a href ='/' className="font-medium hover:text-black text-base md:hover:text-yellow-600">Home</a>
-            <a href='/about' className='font-medium   hover:text-black  text-base md:hover:text-yellow-600 '>About</a>
-            <a href='/causes' className='font-medium   hover:text-black  text-base md:hover:text-yellow-600'>Causes</a>
-            <a href='/team' className='font-medium   hover:text-black  text-base md:hover:text-yellow-600' >Team</a>
-            <a href='/gallery' className='font-medium   hover:text-black  text-base md:hover:text-yellow-600'>Gallery</a>
-            <a href='/contact' className='font-medium   hover:text-black  text-base md:hover:text-yellow-600'>Contact</a>
+            <a href='/about' className='font-medium   hover:text-black  text-base md:hover:text-yellow-600   md:active:text-yellow-400'>About</a>
+            <a href='/causes' className='font-medium   hover:text-black  text-base md:hover:text-yellow-600  md:active:text-yellow-400'>Causes</a>
+            <a href='/team' className='font-medium   hover:text-black  text-base md:hover:text-yellow-600     md:active:text-yellow-400' >Team</a>
+            <a href='/gallery' className='font-medium   hover:text-black  text-base md:hover:text-yellow-600  md:active:text-yellow-400'>Gallery</a>
+            <a href='/contact' className='font-medium   hover:text-black  text-base md:hover:text-yellow-600  md:active:text-yellow-400'>Contact</a>
           </div>
           
           < div className='rounded-md hidden hover:bg-black hover:text-white bg-yellow-400 font-bold   py-2 px-4 md:flex'>Donate</div>

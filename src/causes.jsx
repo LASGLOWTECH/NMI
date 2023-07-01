@@ -1,6 +1,20 @@
 
+
+
+import { useEffect } from "react";
+
+import AOS from 'aos';
+import 'aos/dist/aos.css';
+
+
+
 import CauseItems from "./causesitems"
 const Causes = () => {
+
+  useEffect(() => {
+    AOS.init({ duration: 1000 });
+
+}, []);
   return (
     <div className="About ">
 
@@ -13,11 +27,11 @@ const Causes = () => {
 
             <h1 className='text-4xl text-center max-w-lg font-bold text-white pt-2'>CHANGE IS POSSIBLE AND IT COMES FROM THE POWER WITHIN</h1>
             <p className='  font-medium text-center text-gray-300 py-5 px-3' >
-            You can't help the whole world, but
-            yon can help a girl child, start listening and taking actions for period poverty elimination</p>
+            You can't help the whole world but
+            yon can help a girl child. Start listening and taking actions for period poverty elimination</p>
 
             <div className='flex justify-start my-3'>
-              <a href="/" className='rounded-md text-black shadow-sm hover:bg-green-400  hover:text-white  px-4 mt-5 py-2 bg-yellow-500 font-bold  '>Donate Now</a>
+              <a href="/contact" className='rounded-md text-black shadow-sm hover:bg-green-400  hover:text-white  px-4 mt-5 py-2 bg-yellow-500 font-bold  '>Donate Now</a>
             </div>
 
           </div>
@@ -47,7 +61,7 @@ const Causes = () => {
   <div className=" grid grid-cols-1 gap-5  py-10   md:grid-cols-2">
     {CauseItems.map(Infos => {
 
-      return (<div className="flex rounded-md bg-white hover:bg-white shadow-lg hover:scale-105  p-5  " key={Infos.id} >
+      return (<div className="flex rounded-md bg-white hover:bg-white shadow-lg hover:scale-105  p-5  "  data-aos="zoom-in-up" key={Infos.id} >
         <div className="image-circl  ">
           <img src={Infos.Icon} className="rounded w-[100px]" alt="girl" />
         </div>

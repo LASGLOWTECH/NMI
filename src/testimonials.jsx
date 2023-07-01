@@ -8,9 +8,6 @@ const Testimonials= [
  },
 
 
- { id:3,
-  Video:"/tempFile1.mp4"
- },
 
  { id:4,
   Video:"/tempfile2.mp4"

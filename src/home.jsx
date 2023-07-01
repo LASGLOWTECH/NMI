@@ -42,11 +42,11 @@ const Home = () => {
           <h4 className=' text-2xl text-center f-bold text-gray-600 font-medium md:text-left'>Our Believe</h4>
           <div className="line p  place-self-center w-20 md:place-self-start md:w-20 border border-yellow-500"></div>
 
-          <h3 className=' max-w-md text-2xl pt-3 text-center  text-gray-600 font-bold md:text-left'>It is our believe, that we can reach more
-            disadvantage, victimized and marginalized girl child spread across rural communities, schools, IDP camps and prisons with you</h3>
+          <h3 className=' max-w-md text-2xl pt-3 text-center  text-gray-600 font-bold md:text-left'>It is our believe that we can reach more
+           vulnerable, disadvantage, victimized and marginalized girl child spread across rural communities, schools, IDP camps and prisons with you</h3>
           <p className='text-base text-center   max-w-md font-medium text-gray-700 py-5 md:text-justify' >
-            Every Single school girl child, women, female inmates and female genders with disabilities deserves the comfort of a sanitary pad regardless of
-            their aristocratic backgrounds or circumstances not withstanding. No school girl child shuold miss out of school within the space of her
+            Every single school girl child, women, female inmates and female genders with disabilities deserves the comfort of a sanitary pad regardless of
+            their aristocratic backgrounds or circumstances not withstanding. No school girl child should miss out of school within the space of her
             menstrual period because she can't afford a sanitary pad</p>
         </div>
 
@@ -70,7 +70,7 @@ const Home = () => {
                 </div>
                 <div className="flex flex-col hover:bg-white pl-2">
                   <h4 className=' text-lg font-bold'>{Infos.headtext}</h4>
-                  <p className='border-bl text-base break-word max-w-md font-medium text-gray-600 py-3 ' >
+                  <p className='border-bl text-lef text-base break-word max-w-md font-medium text-gray-600 py-3 ' >
                     {Infos.bodytext}</p>
                 </div>
 
@@ -100,7 +100,7 @@ const Home = () => {
           <div className="hover:border-blue-300  container mx-auto px-2 ">
             <h2 className=' text-justify  text-2xl py-5   text-gray-600  font-bold'>We are passionate about the reproductive health care
               and menstrual hygiene management of the girl child.
-              <span className="text-uppercase"> Pads should be given for free, Menstruation is an inevitable factor that can't be altered
+              <span className="text-uppercase"> Pads should be given for free, menstruation is an inevitable factor that can't be altered
               </span></h2>
           </div>
 
@@ -146,7 +146,7 @@ const Home = () => {
             <div className="line p  place-self-center w-20 md:w-20 border border-yellow-500"></div>
 
             <h3 className=' max-w-md text-2xl py-3 text-center  text-gray-600 font-bold '>What People are Saying
-              About our Services </h3>
+              About our impacts </h3>
 
           </div>
 
@@ -202,7 +202,7 @@ const Home = () => {
             <h4 className=' text-2xl text-center font-medium pt-5'>Our Tours</h4>
             <div className="line p  place-self-center w-20  md:w-20 border border-yellow-500"></div>
 
-            <h3 className=' max-w-md text-2xl py-3 text-center  text-gray-600 font-bold '>Higlights from our tours and moments in rendering humaniteria aid and creating social harmony and impact </h3>
+            <h3 className=' max-w-md text-2xl py-3 text-center  text-gray-600 font-bold '>Higlights from our campaign projects, community outreaches  and moments in rendering humaniterian aid and creating social harmony and impacts </h3>
 
           </div>
         </div>

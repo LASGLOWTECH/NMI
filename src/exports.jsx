@@ -7,14 +7,14 @@ const Info= [
 { id:2,
  Icon:"/heart2.png",
  headtext:"Charity Services",
- bodytext:" To show act of kindness by loaning our strenght instead of reminding them their weaknesses"
+ bodytext:" To show act of kindness by loaning our strenght instead of reminding them of their weaknesses"
 
 },
 
 { id:3,
  Icon:"/chat.png",
- headtext:"Humaniteria Services",
- bodytext:" We Embrace equity and inclusivity to the menstrual hygiene management of the girl child, women, female inmates and female genders with disabilities"
+ headtext:"Humaniterian Services",
+ bodytext:" We embrace equity and inclusivity to the menstrual hygiene management of the girl child, women, female inmates and female genders with disabilities"
 
 }
 

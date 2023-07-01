@@ -21,7 +21,7 @@ const Profiles= [
 
 { id:4,
  Icon:"/prof8.png",
- headtext:"Mr. Kabiru Muhamed",
+ headtext:"Mr.   Muhamed Kabiru Usman",
  bodytext:" Program manager"
 
 },
@@ -66,7 +66,12 @@ const Profiles= [
  
  },
 
+ { id:10,
+  Icon:"/gid.jpg",
+  headtext:"Mr. Ameh Gideon",
+  bodytext:"Communication Manager"
  
+ },
 
 
 
