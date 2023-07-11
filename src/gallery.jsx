@@ -26,7 +26,8 @@ const Gallery = () => {
      <div className=" grid gap-5 grid-cols-1 py-10 service-points   md:grid-cols-3">
       {Gall.map(val => {
 
-       return (<div className="  md:break-inside-auto shadow-xl  hover:scale-105 hover:text-gray-300 " key={val.id}data-aos="slide-in" >
+       return (
+        <div className="  md:break-inside-auto shadow-xl  hover:scale-105 hover:text-gray-300 " key={val.id}data-aos="slide-in" >
         <img className=" md:break-inside-auto  " src={val.Img} alt='girl'></img>
 
         
@@ -47,7 +48,7 @@ const Gallery = () => {
     <p className="py-6 text-gray-600 font-bold  text-base text-center">Short Clips on some of our Campaigns </p>
 
 
-     <div className=" grid gap-5 grid-cols-1 py-10 service-points   md:grid-cols-3">
+     <div className=" grid gap-5 grid-cols-1 py-10 service-points   md:grid-cols-2">
       {Videoclips.map(val => {
 
        return (<div className="  md:break-inside-auto shadow-xl  hover:scale-105 hover:text-gray-300 " key={val.id}data-aos="slide-in" >

@@ -5,7 +5,7 @@
 const Videoclips= [
  
  { id:1,
-  Video:"/nmv (1).mp4"
+  Video:"/naso.mp4"
  },
 
  

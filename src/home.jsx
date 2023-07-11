@@ -13,13 +13,13 @@ const Home = () => {
     <div className="Home ">
 
 
-      <section className='hero-section bg-yellow-500 space-y-12 pb-6justify-between hover:scale-40 '>
+      <section className='hero-section space-y-12 pb-6 justify-between hover:scale-40 '>
         <div className='flex flex-col container mx-auto  px-6 md:flex-row'>
           <div className=' flex flex-col  mt-10 '>
             <p className='text-lg font-bold text-yellow-400 pt-10 ' >Nicholasmotivates Initiative</p>
 
-            <h1 className='text-4xl font-bold text-white  pt-2'>An Advocacy For the Girl Child Campaign Project;<span className="text-yellow-400"> GIVE OUT A PAD, SAVE A GIRL CHILD</span></h1>
-            <p className='text-base text-justify   font-medium text-gray-300 py-5 ' >
+            <h1 className='text-4xl font-bold text-white  pt-2'> An Advocacy For the Girl Child Campaign Project;<span className="text-yellow-400 text-2xl"> GIVE OUT A PAD, SAVE A GIRL CHILD</span></h1>
+            <p className='text-base text-left   font-medium text-gray-300 py-5 l' >
               Our core mandate is to eradicate period poverty, menstrual shame, stigma and taboos for the vulnerable, victimized,
               disadvantage and marginalized girl child, women, female inmates and female genders
               with disabilities to create a world where every girl, women, female inmates and female genders with disabilities are empowered to manage her Menstruation safely and hyginacally with integrity,
@@ -39,12 +39,12 @@ const Home = () => {
       <div className='container mx-auto px-6   pt-3 my-10 flex flex-col justify-between md:flex-row md:space-x-6' >
 
         <div className=" flex flex-col space-y-2  justify-start">
-          <h4 className=' text-2xl text-center f-bold text-gray-600 font-medium md:text-left'>Our Believe</h4>
+          <h4 className=' text-2xl text-center f-bold text-gray-600 font-medium  md:text-left'>Our Believe</h4>
           <div className="line p  place-self-center w-20 md:place-self-start md:w-20 border border-yellow-500"></div>
 
-          <h3 className=' max-w-md text-2xl pt-3 text-center  text-gray-600 font-bold md:text-left'>It is our believe that we can reach more
-           vulnerable, disadvantage, victimized and marginalized girl child spread across rural communities, schools, IDP camps and prisons with you</h3>
-          <p className='text-base text-center   max-w-md font-medium text-gray-700 py-5 md:text-justify' >
+          <h5 className='  text-2xl pt-3 text-center  md:max-w-2xl text-gray-600 font-bold md:text-left'>It is our believe that we can reach more
+           vulnerable, disadvantage, victimized and marginalized girl child spread across rural communities, schools, IDP camps and prisons with you</h5>
+          <p className='text-base text-center md:max-w-2xl font-medium text-gray-600 py-5 md:text-left' >
             Every single school girl child, women, female inmates and female genders with disabilities deserves the comfort of a sanitary pad regardless of
             their aristocratic backgrounds or circumstances not withstanding. No school girl child should miss out of school within the space of her
             menstrual period because she can't afford a sanitary pad</p>
@@ -96,12 +96,12 @@ const Home = () => {
       {/* vid hero */}
 
       <section className="Vivav   py-4">
-        <div className='container mx-auto px-2 py-3 flex flex-col items-center' >
-          <div className="hover:border-blue-300  container mx-auto px-2 ">
-            <h2 className=' text-center  text-2xl py-5   text-gray-600  font-bold'>We are passionate about the reproductive health care
+        <div className='container mx-auto px-4 py-3 flex flex-col items-center' >
+          <div className=" max-wd-md hover:border-blue-300  container mx-auto px-6 ">
+            <h5 className=' text-2xl py-3 text-center  text-gray-600 font-bold'>We are passionate about the reproductive health care
               and menstrual hygiene management of the girl child.
-              <span className="text-uppercase"> Pads should be given for free, menstruation is an inevitable factor that can't be altered
-              </span></h2>
+              <span className="text-uppercase "> Pads should be given for free, menstruation is an inevitable factor that can't be altered
+              </span></h5>
           </div>
 
 
@@ -122,10 +122,10 @@ const Home = () => {
           <div className=" grid gap-3 px-7   md:gap-3 md:space-x-12 grid-cols-2 py-3 service-points my-3   md:grid-cols-4">
             {Doings.map(doing => {
 
-              return (<div className="flex rounded-md flex-row mt-3  " key={doing.id} >
+              return (<div className="flex rounded-md flex-row mt-3 justify-evenly " key={doing.id} >
 
-                <div className="flex flex-col bg-yellow-400  hover:bg-blue-50  hover:scale-110 rounded-lg  p-4">
-                  <h1 className=' text-4xl md:text-5xl text-center text-black font-bold  '>{doing.topN}+</h1>
+                <div className="flex flex-col bg-yellow-400  hover:bg-blue-50  hover:scale-110 rounded-lg  p-3">
+                  <h1 className=' text-4xl md:text-4xl text-center text-black font-bold  '>{doing.topN}+</h1>
                   <p className=' text-base text-center hover:text-black font-medium text-gray-600 py-2 ' >
                     {doing.btext}</p>
                 </div>
@@ -162,7 +162,7 @@ const Home = () => {
 
 
 
-        <Carousel transition={{ duration: 2 }} className="rounded-xl">
+        <Carousel transition={{ duration: 1}} className="rounded-xl">
 
             {Testimonials.map(vida => {
               return (
@@ -202,16 +202,16 @@ const Home = () => {
             <h4 className=' text-2xl text-center font-medium pt-5'>Our Tours</h4>
             <div className="line p  place-self-center w-20  md:w-20 border border-yellow-500"></div>
 
-            <h3 className=' max-w-md text-2xl py-3 text-center  text-gray-600 font-bold '>Higlights from our campaign projects, community outreaches  and moments in rendering humaniterian aid and creating social harmony and impacts </h3>
+            <h3 className=' max-w-2xl text-2xl py-3 text-center  text-gray-600 font-bold '>Higlights from our campaign projects, community outreaches  and moments in rendering humaniterian aid and creating social harmony and impacts </h3>
 
           </div>
         </div>
 
 
-        <div className='container pt-5 grid gap-4 mx-auto px-6 items-center justify-between  md:grid-cols-3 ' >
+        <div className='container pt-5 grid gap-4   items-center justify-evenly  md:grid-cols-3 ' >
 
 
-          <div className="gallery-items h-6/12bg-green-500">
+          <div className="gallery-items h-6/12 bg-green-500">
             <img src="/gal2.JPG" alt="gridtems" className=""></img>
           </div>
           <div className="gallery-items  w-100 bg-yellow-500 h-6/12">
