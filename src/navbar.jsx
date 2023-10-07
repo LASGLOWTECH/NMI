@@ -51,18 +51,20 @@ const Navbar = () => {
         <div className="  container h-16  space-x-6 flex items-center justify-between mx-auto  px-4">
           <div className='nav-brand py-2   w-16  h-25  '><img src='/NMB.png' alt='brand-logo' /></div>
           <div className= { `hidden text-white transform space-y-6 navlinks flex nav-links ${toggleI} md:space-x-6 md:text-black  md:block` } >
-          <a href ='/' className="font-medium hover:text-black text-base md:hover:text-yellow-600">Home</a>
-            <a href='/about' className='font-medium  text-lg  hover:text-black  text-base md:hover:text-yellow-600   md:active:text-yellow-400'>About</a>
-            <a href='/causes' className='font-medium  text-lg  hover:text-black  text-base md:hover:text-yellow-600  md:active:text-yellow-400'>Causes</a>
-            <a href='/team' className='font-medium   text-lg hover:text-black  text-base md:hover:text-yellow-600     md:active:text-yellow-400' >Team</a>
-            <a href='/gallery' className='font-medium  text-lg  hover:text-black  text-base md:hover:text-yellow-600  md:active:text-yellow-400'>Gallery</a>
-            <a href='/contact' className='font-medium  text-lg  hover:text-black  text-base md:hover:text-yellow-600  md:active:text-yellow-400'>Contact</a>
+          <a href ='/' className="font-medium hover:text-yellow-300 text-base md:hover:text-yellow-600">Home</a>
+            <a href='/about' className='font-medium  text-lg  hover:text-yellow-300  text-base md:hover:text-yellow-300   md:active:text-yellow-400'>About</a>
+            <a href='/causes' className='font-medium  text-lg  hover:text-yellow-300  text-base md:hover:text-yellow-300  md:active:text-yellow-400'>Causes</a>
+            <a href='/team' className='font-medium   text-lg hover:text-yellow-300  text-base md:hover:text-yellow-300     md:active:text-yellow-400' >Team</a>
+            <a href='/gallery' className='font-medium  text-lg  hover:text-yellow-300  text-base md:hover:text-yellow-300  md:active:text-yellow-400'>Gallery</a>
+            <a href='/contact' className='font-medium  text-lg  hover:text-yellow-300  text-base md:hover:text-yellow-300  md:active:text-yellow-400'>Contact</a>
+            <a href="https://docs.google.com/forms/d/e/1FAIpQLSfg-lJ2V2MtU2SQfMtGjrcRjvD348bgAwwOS8vdQ0ykXkOFXQ/viewform?usp=pp_url" className='font-medium  text-lg  hover:text-yellow-300  text-base md:hover:text-yellow-300  md:active:text-yellow-400'>Volunteer With Us</a>
+          
           </div>
           
           < div className='rounded-md hidden hover:bg-black hover:text-white bg-yellow-400 font-bold   py-2 px-4 md:flex'>Donate</div>
-{!show && < div className=' flex items-center rounded-full hover:bg-black hover:text-white w-8 h-8  bg-yellow-400 text-black justify-center md:hidden'>< RxHamburgerMenu className="font-bold text-lg  " onClick={handleShow}/></div>}
+{!show && < div className=' flex items-center  hover:text-black  text-black justify-center md:hidden'>< RxHamburgerMenu className="font-bold text-2xl   " onClick={handleShow}/></div>}
          
-{show && <div className=' hover:text-yellow-500 text-black   py-2 px-4 md:hidden'>< FaTimes  className="font-medium text-xl"  onClick={handleClose}/></div>}
+{show && <div className=' hover:text-yellow-300 text-black   py-2 px-4 md:hidden'>< FaTimes  className="font-medium text-2xl"  onClick={handleClose}/></div>}
         </div>
       </div>
   

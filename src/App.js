@@ -9,14 +9,39 @@ import Contact from './contact';
 import Footer from './footer';
 import Gallery from './gallery';
 import Causes from './causes';
-// import { useState } from 'react';
 
-function App() {
+import ScrollTop from './scroll';
+import { useState, useEffect } from 'react';
+
+const App=()=> {
 // const [position, setPosition]=useState(0)
 // const [gotop, setGotop]=useState(gotophidden)
+const [loading, setLoading] = useState(false)
+
+
+  useEffect(() => {
+    setLoading(true);
+    setTimeout(() => {
+      setLoading(false)
+    }, 5000);
+
+
+
+    
+  }, [])
 
   return (
     <div className="App ">
+
+{loading ? <div className='load bg-gradient-to-r from-black-50 to-black-50
+    flex  flex-col justify-center items-center h-[100vh] '
+       >
+
+        <img src='/NMB.png' className="load-img animate-pulse w-[400px]" alt='loader' ></img>
+
+        </div> :
+<>
+      
       <Navbar />
       <Routes>
         <Route path='/' element={<Home />} />
@@ -26,7 +51,9 @@ function App() {
         <Route path='/team' element={<Team />} />
         <Route path='/Gallery' element={<Gallery />} />
       </Routes>
-      <Footer />
+      <ScrollTop/>
+      <Footer /></>}
+      
     </div>
 
   );

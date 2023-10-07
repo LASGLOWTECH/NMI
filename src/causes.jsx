@@ -23,10 +23,10 @@ const Causes = () => {
 <section className='hero-section bg-yellow-500 py-8  hover:scale-40 '>
         <div className='flex flex-col container mx-auto   md:flex-row'>
           <div className=' flex flex-col mx-auto  items-center justify-center  mt-10 '>
-            <p className='text-lg font-bold  place-self-center text-yellow-500 pt-10 ' >Our Causes for actions</p>
+            <p className='text-lg font-bold pb-4  place-self-center text-yellow-400 pt-10 ' >Our Causes for actions</p>
 
-            <h1 className='text-4xl text-center max-w-lg font-bold text-white pt-2'>CHANGE IS POSSIBLE AND IT COMES FROM THE POWER WITHIN</h1>
-            <p className='  font-medium text-center text-gray-300 py-5 px-3' >
+            <h1 className='text-4xl md:text-5xl text-center md:px-20 font-bold text-white pt-2'>CHANGE IS POSSIBLE AND IT COMES FROM THE POWER WITHIN</h1>
+            <p className=' px-3  font-medium text-center text-gray-300 py-5 md:max-w-md leading-loose' >
             You can't help the whole world but
             you can help a girl child. Start listening and taking actions for period poverty elimination</p>
 
@@ -40,7 +40,7 @@ const Causes = () => {
 
       </section>
 
-      <section className="service-sec bg-green-50">
+      <section className="service-sec Contact-Hero ">
 
 <div className="container mx-auto  px-6 ">
 
@@ -58,16 +58,18 @@ const Causes = () => {
  </div>
 
 
-  <div className=" grid grid-cols-1 gap-5  py-10   md:grid-cols-2">
+  <div className="">
     {CauseItems.map(Infos => {
 
-      return (<div className="flex rounded-md bg-white hover:bg-white shadow-lg hover:scale-105  p-5  "  data-aos="zoom-in-up" key={Infos.id} >
-        <div className="image-circl  ">
-          <img src={Infos.Icon} className="rounded w-[100px]" alt="girl" />
+      return (<div className=" grid grid-cols-1 gap-5 md:mt-20  mt-4   py-10 md:items-center   md:grid-cols-3 "  data-aos="zoom-in-up" key={Infos.id} >
+        <div className="image-circl   col-span-1 ">
+          <img src={Infos.Icon} className="rounded-2xl w-full" alt="girl" />
         </div>
-        <div className="flex flex-col  pl-2">
-          <h4 className=' text-lg p-3 font-bold'>{Infos.headtext}</h4>
-          <p className='border-bl text-base  max-w-md font-medium text-gray-600 px-2  ' >
+       
+        <div className="flex flex-col  pl-2 mt-4  col-span-2 ">
+        <div className="line mt-1 rounded-l md:mx-6  w-20 mb-4 md:w-20 border border-yellow-300"></div>
+          <h4 className=' text-5xl text-white p-2 md:mx-6 font-medium'>{Infos.headtext}</h4>
+          <p className='border-bl text-base pt-6  md:mx-6 leading-8  font-medium text-white px-2  ' >
             {Infos.bodytext}</p>
         </div>
       </div>)

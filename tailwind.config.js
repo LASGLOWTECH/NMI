@@ -15,8 +15,12 @@ module.exports =  withMT( {
       xl:'1440px'
     },
     extend: {
-      colors:'brightRed '
-    },
+      colors:{
+        darkYellow:'#FFCC00',
+        darkYellow2:'#249298',
+        greyBlack:'#181B38',
+        grey:'#fafafa'
+      }},
   },
   plugins: [require('flowbite/plugin')]
 });
