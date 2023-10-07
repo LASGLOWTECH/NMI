@@ -1,13 +1,36 @@
 import Info from "./exports";
 import Doings from "./doings";
-// import { GrFormPrevious, GrFormNext } from "react-icons/gr";
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 import { Carousel } from "@material-tailwind/react"
 import Testimonials from "./testimonials";
-// import { RxDotFilled } from "react-icons/rx";
+
+import CountUp from 'react-countup';
+import ScrollTrigger from 'react-scroll-trigger';
+import { useState, useEffect } from 'react';
 
 
 
 const Home = () => {
+
+  const [counton, setCounton] = useState(false)
+  useEffect(() => {
+    AOS.init({ duration: 2000 });
+
+  }, []);
+
+
+  const endCount = () => {
+    setCounton(false)
+  }
+  const startCount = () => {
+    setCounton(true)
+
+  }
+
+
+
+
 
 
   const Partners=[
@@ -24,7 +47,7 @@ const Home = () => {
 
       <section className='hero-section space-y-12 pb-6 justify-between hover:scale-40 '>
         <div className="grid md:grid-cols-2 grid-cols-1 container mx-auto   ">
-          <div className=' flex flex-col mx-6  mt-10 '>
+          <div className=' flex flex-col mx-6  mt-10 ' data-aos="slide-right">
             <p className='text-lg font-bold text-yellow-400 pt-10 ' >Nicholasmotivates Initiative</p>
 
             <h1 className=' text-4xl md:text-6xl md:text-left font-bold text-white  pt-2'> An Advocacy For the Girl Child Campaign Project;<span className="text-yellow-400 text-2xl"> GIVE OUT A PAD, SAVE A GIRL CHILD</span></h1>
@@ -40,7 +63,7 @@ const Home = () => {
 
           </div>
 
-<div className="  md:-mr-6 hero2"> 
+<div className="  md:-mr-6 hero2 " data-aos="fade-out"> 
 
 <img className="w-full  md:pr-3 md:-mb-6 h-auto" src='/girlpad.png' alt='girl'  ></img>
 
@@ -58,7 +81,7 @@ const Home = () => {
           <h4 className=' text-2xl text-center f-bold text-gray-600 font-medium  md:text-left'>Our Believe</h4>
           <div className="line p  place-self-center w-20 md:place-self-start md:w-20 border border-yellow-500"></div>
 
-          <h5 className='  text-l pt-3  text-center  text-gray-600 font-medium text-left '>"It is our believe that we can reach more
+          <h5 className='  text-l pt-3  text-center  text-gray-600 font-medium md:text-left '>"It is our believe that we can reach more
            vulnerable, disadvantage, victimized and marginalized girl child spread across rural communities, schools, IDP camps and prisons with you"</h5>
           <p className='text-base text-center  md:max-w-2xl font-medium text-gray-600 py-5 md:text-left leading-loose  ' >
             Every single school girl child, women, female inmates and female genders with disabilities deserves the comfort of a sanitary pad regardless of
@@ -153,7 +176,28 @@ const Home = () => {
               return (<div className="flex rounded-md flex-row mt-3 justify-evenly " key={doing.id} >
 
                 <div className="flex flex-col   hover:bg-blue-50  hover:scale-110 rounded-lg  p-3">
-                  <h1 className=' text-4xl md:text-4xl text-center text-black font-bold  '>{doing.topN}+</h1>
+
+
+                <ScrollTrigger
+                      onEnter={startCount}
+                      onExit={endCount}>
+
+                      <h1 className=' text-4xl md:text-4xl text-center text-black font-bold'>
+                        {counton &&
+                          <CountUp
+                            start={0}
+                            end={doing.topN}
+                            duration={2}
+                            delay={0} />}+
+
+                      </h1>
+
+
+                    </ScrollTrigger>
+
+
+
+                 
                   <p className=' text-base text-center hover:text-black font-medium text-gray-600 py-2 ' >
                     {doing.btext}</p>
                 </div>
