@@ -58,9 +58,9 @@ const Home = () => {
           <h4 className=' text-2xl text-center f-bold text-gray-600 font-medium  md:text-left'>Our Believe</h4>
           <div className="line p  place-self-center w-20 md:place-self-start md:w-20 border border-yellow-500"></div>
 
-          <h5 className='  text-2xl md:text-3xl pt-3 text-center  md:max-w-2xl text-gray-600 font-medium md:text-left '>"It is our believe that we can reach more
+          <h5 className='  text-l pt-3  text-center  text-gray-600 font-medium text-left '>"It is our believe that we can reach more
            vulnerable, disadvantage, victimized and marginalized girl child spread across rural communities, schools, IDP camps and prisons with you"</h5>
-          <p className='text-base text-center md:max-w-2xl font-medium text-gray-600 py-5 md:text-left leading-loose  ' >
+          <p className='text-base text-center  md:max-w-2xl font-medium text-gray-600 py-5 md:text-left leading-loose  ' >
             Every single school girl child, women, female inmates and female genders with disabilities deserves the comfort of a sanitary pad regardless of
             their aristocratic backgrounds or circumstances not withstanding. No school girl child should miss out of school within the space of her
             menstrual period because she can't afford a sanitary pad.</p>
@@ -94,7 +94,7 @@ const Home = () => {
                   <img src={Infos.Icon} className="rounded w-[200px] md:w-[100px]" alt="girl" />
                 </div>
                 <div className="flex flex-col  pl-2">
-                  <h4 className=' text-lg text-center md:text-start font-bold'>{Infos.headtext}</h4>
+                  <h4 className=' text-lg text-center pt-3 md:text-start font-bold'>{Infos.headtext}</h4>
                   <p className='border-bl text-center  md:text-start  text-base leading-loose break-word max-w-md font-medium text-gray-600 py-3 ' >
                     {Infos.bodytext}</p>
                 </div>
@@ -126,7 +126,7 @@ const Home = () => {
       <section className="Vivav   py-4">
         <div className='container mx-auto px-4 pt-10  pb-3 flex flex-col items-center' >
           <div className=" max-wd-md hover:border-blue-300  container mx-auto px-2 ">
-            <h5 className=' text-4xl max-w-auto py-3 text-center md:px-20  text-gray-600 font-bold'>We are passionate about the reproductive health care
+            <h5 className=' text-2xl md:text-4xl md:max-w-auto py-3 text-center md:px-20  text-gray-600 font-bold'>We are passionate about the reproductive health care
               and menstrual hygiene management of the girl child.</h5>
               <p className="text-uppercase text-[18px] leading-loose text-center py-4 font-medium "> "Pads should be given for free, menstruation is an inevitable factor that can't be altered
              " </p>
@@ -147,12 +147,12 @@ const Home = () => {
 
 
         <div className="container    mx-auto px-10 ">
-          <div className=" grid gap-3 px-7   md:gap-3 md:space-x-12 grid-cols-2 py-3 service-points my-3   md:grid-cols-4">
+          <div className=" grid gap-3 px-7   md:gap-3 md:space-x-12 grid-cols-1 py-3 service-points my-3   md:grid-cols-4">
             {Doings.map(doing => {
 
               return (<div className="flex rounded-md flex-row mt-3 justify-evenly " key={doing.id} >
 
-                <div className="flex flex-col bg-yellow-300  hover:bg-blue-50  hover:scale-110 rounded-lg  p-3">
+                <div className="flex flex-col   hover:bg-blue-50  hover:scale-110 rounded-lg  p-3">
                   <h1 className=' text-4xl md:text-4xl text-center text-black font-bold  '>{doing.topN}+</h1>
                   <p className=' text-base text-center hover:text-black font-medium text-gray-600 py-2 ' >
                     {doing.btext}</p>
@@ -173,7 +173,7 @@ const Home = () => {
             <h4 className=' text-2xl text-center font-medium pt-5'>Testimonials</h4>
             <div className="line p  place-self-center w-20 md:w-20 border border-yellow-300"></div>
 
-            <h5 className=' text-4xl max-w-auto py-6 text-center md:px-20  text-gray-600 font-bold '>What People are Saying
+            <h5 className=' text-3xl md:text-4xl md:max-w-auto py-6 text-center md:px-20  text-gray-600 font-bold '>What People are Saying
               About our impacts </h5>
 
           </div>
@@ -230,7 +230,7 @@ const Home = () => {
             <h4 className=' text-2xl text-center font-medium pt-5'>Our Tours</h4>
             <div className="line p  place-self-center w-20  md:w-20 border border-yellow-300"></div>
 
-            <h5 className=' text-4xl px-0 max-w-auto pt-5  text-center md:px-20  text-gray-600 font-medium '>Higlights from our campaign projects, community outreaches  and moments in rendering humaniterian aid and creating social harmony and impacts </h5>
+            <h5 className=' text-2xl md:text-4xl px-0 md:max-w-auto pt-5  text-center md:px-20  text-gray-600 font-medium '>Higlights from our campaign projects, community outreaches  and moments in rendering humaniterian aid and creating social harmony and impacts </h5>
 
           </div>
         </div>
