@@ -37,7 +37,7 @@ const [loading, setLoading] = useState(false)
     flex  flex-col justify-center items-center h-[100vh] '
        >
 
-        <img src='/NMB.png' className="load-img animate-pulse w-[400px]" alt='loader' ></img>
+        <img src='/nim.png' className="load-img animate-pulse w-[200px]" alt='loader' ></img>
 
         </div> :
 <>

@@ -159,10 +159,10 @@ const Home = () => {
         </div>
 
         {/* video secttion */}
-        <div className=" mx-auto px-6   container">
-          <div className="bg-blue-50  rounded-xl">
+        <div className=" mx-auto grid grid-cols-1 px-4  container">
+          <div className=" rounded-xl">
 
-            <iframe title="Distributing pads  Section" className="w-full rounded-xl p-2 aspect-video" src="/Unale2.mp4" autostart="false"></iframe>
+            <iframe title="Distributing pads  Section" className="w-full rounded-xl  aspect-video" src="/Unale2.mp4" autostart="true"></iframe>
 
           </div>
 
@@ -234,14 +234,14 @@ const Home = () => {
 
 
 
-        <Carousel transition={{ duration: 1}} className="rounded-xl">
+        <Carousel transition={{ duration: 1}} className="rounded-xl ">
 
             {Testimonials.map(vida => {
               return (
 
 
-                <div className="bg-blue-50  rounded-xl" key={vida.id}>
-                  <iframe title="Distributing pads  Section" className="w-full rounded-xl p-2  aspect-video " src={vida.Video} sandbox></iframe>
+                <div className="grid grid-cols-1 rounded-xl" key={vida.id}>
+                  <iframe title="Distributing pads  Section" className="w-full rounded-xl  aspect-video " src={vida.Video} sandbox></iframe>
                 </div>
                )
             })}

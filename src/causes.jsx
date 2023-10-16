@@ -48,8 +48,8 @@ const Causes = () => {
 
  <h4 className=' text-2xl text-center f-bold text-white font-medium md:text-left pt-'>Programs</h4>
           <div className="line mt-1 w-20  md:w-20 border border-yellow-500"></div>
- <div className=" bg-gray-200  mt-4 rounded-lg  ">
-          <img className="mx-auto  w-full  md:m-auto" src='/nmi78.JPG' alt='girl'></img>
+ <div className="   mt-4 ">
+          <img className="mx-auto   rounded-[30px] w-full  md:m-auto" src='/nmi78.JPG' alt='girl'></img>
 
         </div>
 
