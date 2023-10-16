@@ -162,7 +162,11 @@ const Home = () => {
         <div className=" mx-auto grid grid-cols-1 px-4  container">
           <div className=" rounded-xl">
 
-            <iframe title="Distributing pads  Section" className="w-full rounded-xl  aspect-video" src="/Unale2.mp4" autostart="true"></iframe>
+          <video className="w-full rounded-xl "  controls autoplay muted >
+      <source src="Unale2.ogg" type="video/ogg"/>
+      <source src="/Unale2.mp4" type="video/mp4"/>
+    </video>
+            {/* // <iframe title="Distributing pads  Section" className="w-full rounded-xl  aspect-video" src="/Unale2.mp4" autostart="true"></iframe> */}
 
           </div>
 
@@ -241,8 +245,15 @@ const Home = () => {
 
 
                 <div className="grid grid-cols-1 rounded-xl" key={vida.id}>
-                  <iframe title="Distributing pads  Section" className="w-full rounded-xl  aspect-video " src={vida.Video} sandbox></iframe>
-                </div>
+                
+
+<video className="w-full rounded-xl  sand-box"  controls autoplay muted >
+      <source src={vida.Video}  type="video/ogg"/>
+      <source src={vida.Video}  type="video/mp4"/>
+    </video>
+
+
+                  </div>
                )
             })}
 

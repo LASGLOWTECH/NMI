@@ -51,8 +51,8 @@ const Gallery = () => {
      <div className=" grid gap-5 grid-cols-1 py-10 service-points   md:grid-cols-2">
       {Videoclips.map(val => {
 
-       return (<div className="  md:break-inside-auto shadow-xl  hover:scale-105 hover:text-gray-300 " key={val.id}data-aos="slide-in" >
-         <iframe title="Distributing pads  Section" className="w-full rounded-xl p-2 aspect-video" src={val.Video} autostart="false"></iframe>
+       return (<div className="  md:break-inside-auto shadow-xl  hover:scale-105 hover:text-gray-300 " key={val.id} data-aos="slide-in" >
+         <iframe title="Distributing pads  Section" className="w-full rounded-xl p-2 aspect-video" src={val.Video} autostart="true"></iframe>
         
        </div>
        )
