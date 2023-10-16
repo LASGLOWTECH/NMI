@@ -159,15 +159,15 @@ const Home = () => {
         </div>
 
         {/* video secttion */}
-        <div className=" mx-auto grid grid-cols-1 px-4  container">
+        <div className=" mx-auto grid grid-cols-1 md:px-6 container">
           <div className=" rounded-xl">
 
-          <video className="w-full rounded-xl "  controls autoplay muted >
-      <source src="Unale2.ogg" type="video/ogg"/>
+          <video className="w-full rounded-xl "  controls autoPlay muted  >
+      <source src="/Unale2.ogg" type="video/ogg"/>
       <source src="/Unale2.mp4" type="video/mp4"/>
+      Your browser does not support the video tag
     </video>
-            {/* // <iframe title="Distributing pads  Section" className="w-full rounded-xl  aspect-video" src="/Unale2.mp4" autostart="true"></iframe> */}
-
+          
           </div>
 
         </div>
@@ -234,7 +234,7 @@ const Home = () => {
 
 
 
-        <div className=" container  px-6 mx-auto">
+        <div className=" container md:px-6   mx-auto">
 
 
 
@@ -244,12 +244,13 @@ const Home = () => {
               return (
 
 
-                <div className="grid grid-cols-1 rounded-xl" key={vida.id}>
+         <div className="grid grid-cols-1 rounded-xl" key={vida.id}>
                 
 
-<video className="w-full rounded-xl  sand-box"  controls autoplay muted >
+<video className="w-full rounded-xl  "  controls autoplay  >
       <source src={vida.Video}  type="video/ogg"/>
       <source src={vida.Video}  type="video/mp4"/>
+      Your browser does not support the video tag
     </video>
 
 

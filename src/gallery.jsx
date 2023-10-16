@@ -52,8 +52,18 @@ const Gallery = () => {
       {Videoclips.map(val => {
 
        return (<div className="  md:break-inside-auto shadow-xl  hover:scale-105 hover:text-gray-300 " key={val.id} data-aos="slide-in" >
-         <iframe title="Distributing pads  Section" className="w-full rounded-xl p-2 aspect-video" src={val.Video} autostart="true"></iframe>
         
+        
+<video className="w-full rounded-xl  sand-box"  controls   >
+      <source  src={val.Video}  type="video/ogg"/>
+      <source  src={val.Video}  type="video/mp4"/>
+      Your browser does not support the video tag
+    </video>
+
+        
+{/*         
+         <iframe title="Distributing pads  Section" className="w-full rounded-xl p-2 aspect-video" src={val.Video} autostart="true"></iframe>
+         */}
        </div>
        )
 
